@@ -1,0 +1,14 @@
+// Last updated: 5/29/2026, 11:53:19 AM
+class Solution {
+    public int countNegatives(int[][] grid) {
+        int neg=0;
+        for(int i=0;i<grid.length;i++){
+            for(int j=0;j<grid[0].length;j++){
+                if(grid[i][j]<0){
+                    neg++;
+                }
+            }
+        }
+        return neg;
+    }
+}
