@@ -1,0 +1,15 @@
+// Last updated: 5/29/2026, 11:52:29 AM
+class Solution {
+    public boolean isThree(int n) {
+        int count=0;
+        for(int i=2;i<n-1;i++){
+            if(n%i==0){
+                count++;
+            }
+        }
+        if(count==1){
+            return true;
+        }
+        return false;
+    }
+}
